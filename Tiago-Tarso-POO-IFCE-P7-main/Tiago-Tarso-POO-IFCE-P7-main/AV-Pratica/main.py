@@ -8,13 +8,13 @@ def main():
     # Objeto FP:
     fp = FolhaPagamento(9, 2019, 0, 0)
     # Objetos CL:
-    cl01 = Colaborador("100", "Manoel Claudino", "Av 13 de Maio 2081", "88671020",
-                       "Benfica", "60020-060", "124543556-89", 4500.00)
-    cl02 = Colaborador("200", "Carmelina da Silva", "Avenida dos Expedicionários 1200",
-                       "3035-1280", "Aeroporto", "60530-020", "301789435-54",
+    cl01 = Colaborador("100", "Phelipe Cruz", "Av. Paulista, 7946 ", "(11)965713859",
+                       "Liberdade", "70867-600", "124543556-89", 4000.00)
+    cl02 = Colaborador("200", "Samir Duarte", "Av. Bela Cintra, 3197",
+                       "(11)9647235814", "Vila Madalena", "40897-500", "301789435-54",
                        2500.00)
-    cl03 = Colaborador("300", "Gurmelina Castro Saraiva", "Av João Pessoa 1020",
-                       "3235-1089", "Damas", "60330-090", "350245632-76", 3000.00)
+    cl03 = Colaborador("300", "Marina Santa Helena", "Av. Augusta, 6179",
+                       "(11)968173648", "Pinheiros", "90846-700", "350245632-76", 5500.00)
     # Objetos MF:
     mf01 = MovimentoFolha(cl01, "Salario", 4500.00, TipoMovimento.P)
     mf02 = MovimentoFolha(cl01, "Plano Saúde", 1000.00, TipoMovimento.P)
