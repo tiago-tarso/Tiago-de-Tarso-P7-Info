@@ -9,19 +9,19 @@ DB_NAME = "storage.db"
 
 
 def create_app():
-    app = Flask(__name__)
-    app.config['SECRET_KEY'] = '123'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-    db.init_app(app)
-    migrate.init_app(app, db)
+    teste = Flask(__name__)
+    teste.config['SECRET_KEY'] = '123'
+    teste.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    teste.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+    db.init_teste(teste)
+    migrate.init_teste(teste, db)
 
     create_database(app)
 
-    return app
+    return teste
 
 
-def create_database(app):
-    if not path.exists('app/' + DB_NAME):
-        db.create_all(app=app)
+def create_database(teste):
+    if not path.exists('teste/' + DB_NAME):
+        db.create_all(teste=teste)
         print('Created Database!')
