@@ -1,8 +1,8 @@
-from app import create_app
-from app.views import instanciar
+from teste import create_teste
+from teste.views import instanciar
 
-app = create_app()
+teste = create_teste()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    teste.run(debug=True)
     instanciar()
