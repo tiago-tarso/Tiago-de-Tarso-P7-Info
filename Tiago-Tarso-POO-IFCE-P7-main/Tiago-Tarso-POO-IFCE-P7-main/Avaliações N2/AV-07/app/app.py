@@ -74,7 +74,7 @@ class ItemNotaFiscal(db.Model):
         return f'00{seq}'
 
 
-class Produto:
+class Produto(db.Model):
     __tablename__ = 'produtos'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -99,7 +99,7 @@ class Produto:
         return string
 
 
-class NotaFiscal:
+class NotaFiscal(db.Model):
     __tablename__ = 'notas'
 
     id = db.Column(db.Integer, primary_key=True)
